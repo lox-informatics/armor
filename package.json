@@ -1,6 +1,6 @@
 {
   "name": "@lox-informatics/armor",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "A lightweight toolkit for automating developer setup tasks.",
   "type": "module",
   "main": "main.mjs",
