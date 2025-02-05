@@ -1,17 +1,18 @@
 {
   "name": "@lox-informatics/armor",
-  "version": "0.0.1",
+  "version": "0.0.10",
   "description": "A lightweight toolkit for automating developer setup tasks.",
-  "main": "index.mjs",
+  "type": "module",
+  "main": "index.js",
   "bin": {
-    "armor": "main.mjs"
+    "armor": "index.js"
   },
   "scripts": {
-    "start": "node main.mjs"
-  },
-  "dependencies": {
-    "@inquirer/prompts": "^7.1.0",
-    "chalk": "^5.3.0"
+    "lint": "tsc --noEmit",
+    "updatecheck": "npx npm-check-updates -u",
+    "prebuild": "rimraf ./lib",
+    "build": "tsc",
+    "postbuild": "echo \"TODO: Ensure files are minimized\""
   },
   "repository": {
     "type": "git",
@@ -30,5 +31,28 @@
   "bugs": {
     "url": "https://github.com/lox-informatics/armor/issues"
   },
-  "homepage": "https://github.com/lox-informatics/armor#readme"
+  "homepage": "https://github.com/lox-informatics/armor#readme",
+  "dependencies": {
+    "@inquirer/prompts": "^7.1.0",
+    "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.3"
+  },
+  "typesVersions": {
+    "*": {
+      "lib/run": [
+        "./module.d.ts"
+      ],
+      "lib/ask": [
+        "./module.d.ts"
+      ]
+    }
+  },
+  "exports": {
+    "./lib/run": "./lib/run.js",
+    "./lib/ask": "./lib/ask.js"
+  }
 }

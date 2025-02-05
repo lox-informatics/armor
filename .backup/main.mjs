@@ -2,8 +2,8 @@
 
 import chalk from "chalk";
 import { select } from "@inquirer/prompts";
-import generateSSHKey from "./generateSSHKey/index.mjs";
-import manageBashAliases from "./manageBashAliases/index.mjs";
+import generateSSHKey from "../generateSSHKey/index.mjs";
+import manageBashAliases from "../manageBashAliases/index.mjs";
 
 async function main() {
   try {

@@ -1,4 +1,2 @@
-~
-.npmrc
-node_modules
-.env
+node_modules/
+lib/
