@@ -11,8 +11,6 @@
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
-    "declarationDir": "./lib",
-    "outDir": "./lib"
   },
-  "include": ["./**/*.ts", "./**/*.d.ts"]
+  "include": ["utils/**/*.ts", "utils/**/*.d.ts"]
 }

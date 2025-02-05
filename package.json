@@ -1,18 +1,16 @@
 {
   "name": "@lox-informatics/armor",
-  "version": "0.0.10",
+  "version": "0.0.12",
   "description": "A lightweight toolkit for automating developer setup tasks.",
   "type": "module",
-  "main": "index.js",
+  "main": "main.mjs",
   "bin": {
-    "armor": "index.js"
+    "armor": "main.mjs"
   },
   "scripts": {
     "lint": "tsc --noEmit",
     "updatecheck": "npx npm-check-updates -u",
-    "prebuild": "rimraf ./lib",
-    "build": "tsc",
-    "postbuild": "echo \"TODO: Ensure files are minimized\""
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -38,21 +36,20 @@
   },
   "devDependencies": {
     "@types/node": "^22.13.1",
-    "rimraf": "^6.0.1",
     "typescript": "^5.7.3"
   },
   "typesVersions": {
     "*": {
-      "lib/run": [
-        "./module.d.ts"
+      "utils/ask": [
+        "./utils/module.d.ts"
       ],
-      "lib/ask": [
-        "./module.d.ts"
+      "utils/bash": [
+        "./utils/module.d.ts"
       ]
     }
   },
   "exports": {
-    "./lib/run": "./lib/run.js",
-    "./lib/ask": "./lib/ask.js"
+    "./utils/ask": "./utils/ask/index.js",
+    "./utils/bash": "./utils/bash/index.js"
   }
 }

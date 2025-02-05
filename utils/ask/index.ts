@@ -1,5 +1,5 @@
 import chalk from "chalk";
-import readline from "readline";
+import readline from "node:readline";
 
 export default function ask(query: string): Promise<string> {
   const rl = readline.createInterface({

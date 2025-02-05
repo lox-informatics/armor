@@ -1,4 +1,11 @@
-src/
-index.html
 .backup/
+
+# npm ignore ts files
+utils/**/*.ts
+
+# but not .d.ts files
+!utils/**/*.d.ts
+
+
+index.html
 tsconfig.json

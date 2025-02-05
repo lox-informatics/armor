@@ -1,7 +1,7 @@
 import chalk from "chalk";
-import { exec } from "child_process";
-import fs from "fs/promises";
-import { promisify } from "util";
+import { exec } from "node:child_process";
+import fs from "node:fs/promises";
+import { promisify } from "node:util";
 
 const execAsync = promisify(exec);
 const isWindows: boolean = process.platform === "win32";
@@ -28,7 +28,7 @@ export async function getBashCommand(scriptPath: string): Promise<string> {
   }
 }
 
-export default async function run(
+export default async function bash(
   scriptPath: string,
   args: string[] = []
 ): Promise<string> {
