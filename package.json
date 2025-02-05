@@ -1,5 +1,5 @@
 {
-  "name": "@treolyv/armor",
+  "name": "@lox-informatics/armor",
   "version": "0.0.1",
   "description": "A lightweight toolkit for automating developer setup tasks.",
   "main": "index.mjs",
@@ -15,21 +15,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/treolyv/armor.git"
+    "url": "https://github.com/lox-informatics/armor.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
+    "armor",
     "setup",
-    "bash",
-    "aliases",
-    "ssh"
+    "bash"
   ],
   "author": "Kevin Wasike",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/treolyv/armor/issues"
+    "url": "https://github.com/lox-informatics/armor/issues"
   },
-  "homepage": "https://github.com/treolyv/armor#readme"
+  "homepage": "https://github.com/lox-informatics/armor#readme"
 }
