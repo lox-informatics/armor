@@ -1,7 +1,7 @@
-declare module "@lox-informatics/armor/utils/ask" {
-  export * from "@lox-informatics/armor/utils/ask";
+declare module "@treeolive-tech/armor/utils/ask" {
+  export * from "@treeolive-tech/armor/utils/ask";
 }
 
-declare module "@lox-informatics/armor/utils/bash" {
-  export * from "@lox-informatics/armor/utils/bash";
+declare module "@treeolive-tech/armor/utils/bash" {
+  export * from "@treeolive-tech/armor/utils/bash";
 }
